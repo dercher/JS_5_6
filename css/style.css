@@ -262,6 +262,9 @@ width: 800px;
 .button:active::before {
     top:-2px;
 }
+.button:hover {
+  cursor: pointer;
+}
 .button span {
   position: relative;
   left: 7px;

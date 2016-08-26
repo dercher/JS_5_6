@@ -369,7 +369,7 @@ function changeOrange() {
   annulForBackground('orange', 4);
   startBack = setInterval( 'putGround()', 1); 
  }
-}//----------------------------------------------------------------------------------------
+}//---------------------------------------------------------------------------------------- 
 var clone;
 function displayButton() {  
    if( task2 == true ) numbers = 3; else numbers = 2;  
@@ -464,7 +464,7 @@ function underline(classes, amount1, num ) {          //-------- function to und
  }//--------------------------------------------------------------------------
  function replacePicToLetter() { // ---- replacing the first button picture to letters
   var transparentBack = '';
-  if( startIsOn == true ) { var put ='Stop'; var put2 = 'stop';} else { var put = 'Start'; var put2 = 'start'; }
+  if( startIsOn == true ) { var put ='Pause'; var put2 = 'stop';} else { var put = 'Start'; var put2 = 'start'; }
      transparentBack = 'background: url("img/start/allStops.png") -1000px -1000px no-repeat';
      changeCss( 0, 1, '.button', 'innerHTML: <input class="none" type=button onclick="' +put2+ '()">' + put, transparentBack, setting[0] );
  }//--------------------------------------------------------------------------------------------------------
@@ -623,17 +623,17 @@ function getLettersPic() {              // getting the background picture for th
    if( startIsOn == true ) {  var put2 = stop } else { var put2 = start }
    var putText = '<input class="none" type=button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'  // empty text for the first button while there is a pic
   if( startIsOn == true )  { //------------------
-      var x = [-537,   -411,    -220,   -4 ]  // all colors for STOP button 
-      var y = [-219,   -204,    -185,  -160]
-      if( colors[5] == 'green')  { y = [-227,   -215,    -202,  -178]}
-      if( colors[5] == 'orange') { y = [-226,   -215,    -202,  -177]}
+      var x = [-536,   -402,    -227,   -13 ]  // all colors for STOP button 
+      var y = [-221,   -201,    -177,  -160]
+      if( colors[5] == 'green')  { y = [-228,   -215,    -196,  -183]}
+      if( colors[5] == 'orange') { y = [-229,   -215,    -196,  -180]}
   } else {//  small   med  large  x-large
       var x = [-537, -394, -220, -10 ]  // all colors for START button
       var y = [-37,   -24,    5,  26 ]
-      if( colors[5] == 'green')  { y = [-45, -35, -12, 8 ] }
+      if( colors[5] == 'green')  { y = [-45, -36, -12, 8 ] }
       if( colors[5] == 'orange') { y = [-44, -35, -12, 8 ] } 
          } //---------------
-  for( var i = 0; i < 4; i++ ) {
+  for( var i = 0; i < 4; i++ ) { 
     if( sizeBool[i] == 1 ) bgBack = 'background: url("img/start/allStops.png") ' +x[i]+'px '+y[i]+'px no-repeat';
   }                                                                                            // large   large
   if( first1 == true || first2 == true )  bgBack = 'background: url("img/start/allStops.png") ' +x[2]+'px '+y[2]+'px no-repeat';
